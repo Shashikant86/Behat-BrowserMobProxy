@@ -1,0 +1,17 @@
+default:
+  filters:
+      tags: 
+  context:
+    parameters:
+
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte:    ~
+      selenium2: ~
+      default_session:        selenium2
+      javascript_session:     selenium2
+      
+  paths:
+    features: features
+    bootstrap: %behat.paths.base%/features/bootstrap
+    
